@@ -13,6 +13,37 @@ class DBSyncer: NSObject {
         syncUnsyncedQuestions()
     }
     
+    func getUnsyncItemsCount() -> Int {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "SectionInfo")
+        let allSectionInfo = CoreData.fetch(request) as! [SectionInfo]
+        var counter = 0
+        
+        for sectionInfo in allSectionInfo {
+            if let notes = sectionInfo.notes?.allObjects {
+                let unsyncedNotes = notes.filter({ (note: Any) -> Bool in
+                    if let note = note as? Note {
+                        return note.synced == false
+                    }
+                    else {
+                        return false
+                    }
+                }) as! [Note]
+                counter = counter + unsyncedNotes.count
+            }
+        }
+        
+        let answeredDBQuestions = fetchQuestions()
+        for answeredDBQuestion in answeredDBQuestions {
+            let questionForUI = parseQuestions(questionsToParse: [answeredDBQuestion]).first!
+            let questionToSync = AnsweredQuestion(question: questionForUI, sectionInfo: questionForUI.sectionInfo!)
+            
+            print("questionToSync")
+            print(questionToSync)
+        }
+        
+        return counter
+    }
+    
     private func syncUnsyncedNotes() {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "SectionInfo")
         let allSectionInfo = CoreData.fetch(request) as! [SectionInfo]

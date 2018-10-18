@@ -41,6 +41,8 @@ class NoteSaver {
                 if let token = KeychainWrapper.standard.string(forKey: "token") {
                     let headers = ["Authorization" :"Bearer " + token]
                     
+                    print("Upload");
+                    
                     Alamofire.upload(multipartFormData: { (multipart) in
                         for (aKey, aValue) in parameters {
                             multipart.append(aValue.data(using: String.Encoding.utf8)!, withName: aKey)

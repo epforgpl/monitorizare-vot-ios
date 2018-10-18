@@ -67,8 +67,12 @@ class AnsweredQuestionSaver {
                                            "numarSectie": answeredQuestion.sectionInfo.sectie ?? "-1",
                                            "codFormular": answeredQuestion.question.form,
                                            "optiuni": options]
-            
-            Alamofire.request(url, method: .post, parameters: ["raspuns": [raspuns]], encoding: JSONEncoding.default, headers: headers).responseString(completionHandler: {[weak self] (response) in
+            let params = ["raspuns": [raspuns]]
+            print("params");
+            print(params)
+            Alamofire.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseString(completionHandler: {[weak self] (response) in
+                print("RESPONSE");
+                print(response.debugDescription)
                 if let statusCode = response.response?.statusCode, statusCode == 200 {
                     if let question = self?.persistedQuestion {
                         self?.updateAsSynced(question: question)

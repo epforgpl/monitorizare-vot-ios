@@ -6,12 +6,14 @@ target 'MonitorizareVot' do
   use_frameworks!
   pod 'Alamofire', '~> 4.0'
   pod 'SwiftKeychainWrapper'
+  pod 'ReachabilitySwift'
   # Pods for MonitorizareVot
 
   target 'MonitorizareVotTests' do
     inherit! :search_paths
     pod 'Alamofire', '~> 4.0'
     pod 'SwiftKeychainWrapper'
+    pod 'ReachabilitySwift'
     # Pods for testing
   end
 

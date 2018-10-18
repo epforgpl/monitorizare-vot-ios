@@ -8,74 +8,81 @@ class PickFormViewController: RootViewController {
     // MARK: - iVars
     var sectionInfo: MVSectionInfo?
     var persistedSectionInfo: SectionInfo?
-    var topLabelText: String?
     private var localFormProvider = LocalFormProvider()
-    @IBOutlet private var buttonsBackgroundViews: [UIView]!
-    @IBOutlet private weak var topButton: UIButton!
-    @IBOutlet private weak var topLabel: UILabel!
     private let dbSyncer = DBSyncer()
+    @IBOutlet weak var TopLabel: UILabel!
+    @IBOutlet weak var TopLabelNumber: UILabel!
     
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        layout()
-        setupOutlets()
-        if let topLabelText = self.topLabelText {
-            self.navigationItem.set(title: topLabelText, subtitle: "Alege formular")
-        }
+        TopLabel.text = sectionInfo?.judet
+        TopLabelNumber.text = sectionInfo?.sectie
+        navigationItem.title = "Obserwacja"
+        
+        let count = dbSyncer.getUnsyncItemsCount()
+        print("getUnsyncItemsCount")
+        print(count)
     }
-    
+
     // MARK: - IBActions
-    @IBAction func firstButtonPressed(_ sender: UIButton) {
+    @IBAction func selectFormA(_ sender: UITapGestureRecognizer) {
         pushFormViewController(type: "A")
     }
     
-    @IBAction func secondButtonPressed(_ sender: UIButton) {
+    @IBAction func selectFormB(_ sender: UITapGestureRecognizer) {
         pushFormViewController(type: "B")
     }
-    
-    @IBAction func thirdButtonPressed(_ sender: UIButton) {
-        pushFormViewController(type: "C")
+
+    @IBAction func selectFormC1(_ sender: UITapGestureRecognizer) {
+        pushFormViewController(type: "C1")
     }
     
-    @IBAction func fourthButtonPressed(_ sender: UIButton) {
+    @IBAction func selectFormC2(_ sender: UITapGestureRecognizer) {
+        pushFormViewController(type: "C2")
+    }
+    
+    @IBAction func selectFormCg(_ sender: UITapGestureRecognizer) {
+        pushFormViewController(type: "Cg")
+    }
+    
+    @IBAction func selectFormCp(_ sender: UITapGestureRecognizer) {
+        pushFormViewController(type: "Cp")
+    }
+
+    @IBAction func selectFormCs(_ sender: UITapGestureRecognizer) {
+        pushFormViewController(type: "Cs")
+    }
+    
+    @IBAction func selectFormCw(_ sender: UITapGestureRecognizer) {
+        pushFormViewController(type: "Cw")
+    }
+    
+    @IBAction func selectFormD(_ sender: UITapGestureRecognizer) {
+        pushFormViewController(type: "D")
+    }
+    
+    @IBAction func selectNota(_ sender: UITapGestureRecognizer) {
         let addNoteViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddNoteViewController") as! AddNoteViewController
         addNoteViewController.sectionInfo = sectionInfo
         addNoteViewController.noteContainer = persistedSectionInfo
         self.navigationController?.pushViewController(addNoteViewController, animated: true)
     }
     
+    @IBAction func changeStation(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     @IBAction func syncData(_ button: UIButton) {
         dbSyncer.syncUnsyncedData()
     }
     
-    @IBAction func topRightButtonPressed(_ sender: UIButton) {
-        if let childs = self.navigationController?.childViewControllers {
-            for aChild in childs {
-                if aChild is SectieViewController {
-                    let _ = self.navigationController?.popToViewController(aChild, animated: true)
-                }
-            }
-        }
-    }
-    
-    // MARK: - Utils
-    private func layout() {
-        for aView in buttonsBackgroundViews {
-            aView.layer.dropDefaultShadow()
-        }
-        topButton.layer.defaultCornerRadius(borderColor: MVColors.gray.cgColor)
-    }
-    
-    private func setupOutlets() {
-        if let topLabelText = self.topLabelText {
-            topLabel.text = topLabelText
-        }
-    }
-    
     private func pushFormViewController(type: String) {
         let formViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FormViewController") as! FormViewController
+        print("pushFormViewController")
+        print(type)
         if let form = localFormProvider.getForm(named: type) {
+            print("passed");
             var questions = [MVQuestion]()
             for aSection in form.sections {
                 if let persistedQuestions = persistedSectionInfo?.questions as? Set<Question> {

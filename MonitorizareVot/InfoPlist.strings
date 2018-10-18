@@ -1,7 +1,7 @@
 //  Created by Code4Romania
 
 NSPhotoLibraryUsageDescription = "";
-NSCameraUsageDescription = "Avem nevoie de acces la librăria de poze pentru a putea atașa o poză notei.";
+NSCameraUsageDescription = "Udziel aplikacji uprawnień do dostępu do zdjęć.";
 NSLocationWhenInUseUsageDescription = "";
 NSLocationAlwaysUsageDescription = "";
 NSLocationUsageDescription = "";

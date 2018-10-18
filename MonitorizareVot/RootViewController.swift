@@ -15,14 +15,13 @@ class RootViewController: UIViewController {
     }
     
     func pushGuideViewController() {
-        if let url = URL(string: "http://monitorizare-vot-ghid.azurewebsites.net/") {
-            let safariViewController = SFSafariViewController(url: url)
-            self.navigationController?.present(safariViewController, animated: true, completion: nil)
-        }
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "GuideViewController") as! GuideViewController
+        self.present(nextViewController, animated:true, completion:nil)
     }
     
     func performCall() {
-        let phoneCallPath = "telprompt://0800080200"
+        let phoneCallPath = "telprompt://048606234807"
         if let phoneCallURL = NSURL(string: phoneCallPath) {
             UIApplication.shared.openURL(phoneCallURL as URL)
         }

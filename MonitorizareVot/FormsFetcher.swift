@@ -22,6 +22,7 @@ class FormsFetcher: FormFetcherDelegate {
         if let token = KeychainWrapper.standard.string(forKey: "token") {
             let headers = ["Content-Type": "application/x-www-form-urlencoded",
                            "Authorization" :"Bearer " + token]
+            print(url);
             Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON { (response:DataResponse<Any>) in
                 switch response.result {
                 case .success(_):

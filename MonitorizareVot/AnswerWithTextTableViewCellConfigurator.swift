@@ -6,11 +6,12 @@ import UIKit
 class AnswerWithTextTableViewCellConfigurator {
     
     func configure(cell: AnswerWithTextTableViewCell, answer: MVAnswer, delegate: AnswerTableViewCellDelegate, selected: Bool) -> UITableViewCell {
-        cell.delegate = delegate
+        cell.textView.text = answer.inputText
         cell.button.setTitle(answer.text, for: .normal)
         cell.button.setTitleColor(MVColors.black.color, for: .normal)
         cell.button.layer.defaultCornerRadius(borderColor: MVColors.gray.color.cgColor)
         cell.button.layer.dropDefaultShadow()
+        cell.delegate = delegate
         cell.answer = answer
 
         if selected {

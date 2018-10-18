@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		55A0F006987479F41A76966C /* Pods_MonitorizareVot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17220BEAAF40F0C9F0CE43ED /* Pods_MonitorizareVot.framework */; };
 		64726B5FB8079F4FDA2D91E0 /* Pods_MonitorizareVotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2E1514E94213D72327CF3C /* Pods_MonitorizareVotUITests.framework */; };
+		656F783E21782A30001479C6 /* ValidTERYT.plist in Resources */ = {isa = PBXBuildFile; fileRef = 656F783D21782A30001479C6 /* ValidTERYT.plist */; };
 		C79A3041BFF1FED83C00E5F3 /* Pods_MonitorizareVotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3827A6E40E14823BEBEB13D9 /* Pods_MonitorizareVotTests.framework */; };
 		E739B9731DDD9F280002604C /* QuestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E739B9721DDD9F280002604C /* QuestionCollectionViewCell.swift */; };
 		E739B9751DDDA2B80002604C /* QuestionCollectionViewCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E739B9741DDDA2B70002604C /* QuestionCollectionViewCellConfigurator.swift */; };
@@ -67,7 +68,6 @@
 		EF4BD3921D9D08DE0042BEC7 /* s.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF4BD3901D9D08DE0042BEC7 /* s.xcdatamodeld */; };
 		EF4BD3A21D9D08DE0042BEC7 /* MonitorizareVotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4BD3A11D9D08DE0042BEC7 /* MonitorizareVotTests.m */; };
 		EF4BD3AD1D9D08DE0042BEC7 /* MonitorizareVotUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4BD3AC1D9D08DE0042BEC7 /* MonitorizareVotUITests.m */; };
-		EF903E351DA25E3100D5BC9C /* Judete.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF903E341DA25E3100D5BC9C /* Judete.plist */; };
 		EFB9AD1A1DE9FDE0008C1035 /* DBSyncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB9AD191DE9FDE0008C1035 /* DBSyncer.swift */; };
 		EFEC82041DCF25B800610D79 /* QuestionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFEC82021DCF25B800610D79 /* QuestionCollectionViewCell.xib */; };
 		F553E3B01DF9C675000D0902 /* NoteContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F553E3AF1DF9C675000D0902 /* NoteContainer.swift */; };
@@ -104,6 +104,7 @@
 		3827A6E40E14823BEBEB13D9 /* Pods_MonitorizareVotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonitorizareVotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6141F9F392CCD91B6DE2B780 /* Pods-MonitorizareVot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorizareVot.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorizareVot/Pods-MonitorizareVot.release.xcconfig"; sourceTree = "<group>"; };
 		626B7494E0E905A8AEF30B00 /* Pods-MonitorizareVotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorizareVotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorizareVotTests/Pods-MonitorizareVotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		656F783D21782A30001479C6 /* ValidTERYT.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ValidTERYT.plist; sourceTree = "<group>"; };
 		7F4B4D98801626552C357D41 /* Pods-MonitorizareVotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorizareVotUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorizareVotUITests/Pods-MonitorizareVotUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		90CF95CA02DCD8E741C5686D /* Pods-MonitorizareVot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorizareVot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorizareVot/Pods-MonitorizareVot.debug.xcconfig"; sourceTree = "<group>"; };
 		DB2E1514E94213D72327CF3C /* Pods_MonitorizareVotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonitorizareVotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,7 +171,6 @@
 		EF4BD3A81D9D08DE0042BEC7 /* MonitorizareVotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonitorizareVotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4BD3AC1D9D08DE0042BEC7 /* MonitorizareVotUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonitorizareVotUITests.m; sourceTree = "<group>"; };
 		EF4BD3AE1D9D08DE0042BEC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF903E341DA25E3100D5BC9C /* Judete.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Judete.plist; path = Resources/Judete.plist; sourceTree = "<group>"; };
 		EFB9AD191DE9FDE0008C1035 /* DBSyncer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSyncer.swift; sourceTree = "<group>"; };
 		EFEC82021DCF25B800610D79 /* QuestionCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionCollectionViewCell.xib; sourceTree = "<group>"; };
 		F0644FE9EC6A7ABF8A6EE0DC /* Pods-MonitorizareVotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorizareVotUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorizareVotUITests/Pods-MonitorizareVotUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -536,7 +536,7 @@
 			isa = PBXGroup;
 			children = (
 				EF13D1561DCF24A800349B43 /* Assets.xcassets */,
-				EF903E341DA25E3100D5BC9C /* Judete.plist */,
+				656F783D21782A30001479C6 /* ValidTERYT.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -579,7 +579,6 @@
 				EF4BD37E1D9D08DE0042BEC7 /* Frameworks */,
 				EF4BD37F1D9D08DE0042BEC7 /* Resources */,
 				4A1AB3AFB208747115F13B4C /* [CP] Embed Pods Frameworks */,
-				1938CE754F35828F8D6D69BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -599,7 +598,6 @@
 				EF4BD39A1D9D08DE0042BEC7 /* Frameworks */,
 				EF4BD39B1D9D08DE0042BEC7 /* Resources */,
 				DB3ECF7275E17AEDF1D2EFE7 /* [CP] Embed Pods Frameworks */,
-				DC07670AF420BBCFF6CD2F07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -619,8 +617,6 @@
 				EF4BD3A41D9D08DE0042BEC7 /* Sources */,
 				EF4BD3A51D9D08DE0042BEC7 /* Frameworks */,
 				EF4BD3A61D9D08DE0042BEC7 /* Resources */,
-				847DF2757D6F9D95AC23B152 /* [CP] Embed Pods Frameworks */,
-				A711B1FA80C8CD5E44CDE01B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -643,7 +639,6 @@
 				TargetAttributes = {
 					EF4BD3801D9D08DE0042BEC7 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 2B5T9E8MN4;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -693,8 +688,8 @@
 				E7702ED21DF980FF00B3E1F2 /* LaunchScreen.storyboard in Resources */,
 				EFEC82041DCF25B800610D79 /* QuestionCollectionViewCell.xib in Resources */,
 				E7FEC2C51DE09E8700F2F04D /* AnswerWithTextTableViewCell.xib in Resources */,
-				EF903E351DA25E3100D5BC9C /* Judete.plist in Resources */,
 				E7E407581DE080850021B402 /* InfoPlist.strings in Resources */,
+				656F783E21782A30001479C6 /* ValidTERYT.plist in Resources */,
 				E7E5B80D1DE1D33F00A05E56 /* QuestionBodyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,64 +711,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1938CE754F35828F8D6D69BF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonitorizareVot/Pods-MonitorizareVot-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4A1AB3AFB208747115F13B4C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MonitorizareVot/Pods-MonitorizareVot-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonitorizareVot/Pods-MonitorizareVot-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		847DF2757D6F9D95AC23B152 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonitorizareVotUITests/Pods-MonitorizareVotUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A711B1FA80C8CD5E44CDE01B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonitorizareVotUITests/Pods-MonitorizareVotUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB3ECF7275E17AEDF1D2EFE7 /* [CP] Embed Pods Frameworks */ = {
@@ -782,28 +739,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MonitorizareVotTests/Pods-MonitorizareVotTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonitorizareVotTests/Pods-MonitorizareVotTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DC07670AF420BBCFF6CD2F07 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonitorizareVotTests/Pods-MonitorizareVotTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E0BFE4299848365AAD3B668F /* [CP] Check Pods Manifest.lock */ = {
@@ -812,13 +761,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonitorizareVotUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EDB2BAFC529132A9DFC6BA45 /* [CP] Check Pods Manifest.lock */ = {
@@ -827,13 +779,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonitorizareVot-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F4AFE020C500785E48EB747C /* [CP] Check Pods Manifest.lock */ = {
@@ -842,13 +797,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonitorizareVotTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1051,11 +1009,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2B5T9E8MN4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MonitorizareVot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.code4ro.MonitorizareVot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.epf.MonitorizareVot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1070,11 +1028,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2B5T9E8MN4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MonitorizareVot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.code4ro.MonitorizareVot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.epf.MonitorizareVot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;

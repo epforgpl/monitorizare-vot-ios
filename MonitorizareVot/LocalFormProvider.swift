@@ -16,7 +16,7 @@ class LocalFormProvider: FormProvider {
     
     
     private func createForm(informations: [[String: AnyObject]], named: String) -> Form {
-        return Form(id: named, title: "Procedurile ...", sections: createSection(informations: informations, named: named))
+        return Form(id: named, title: "Procedury ...", sections: createSection(informations: informations, named: named))
     }
     
     private func createSection(informations: [[String: AnyObject]], named: String) -> [MVSection] {

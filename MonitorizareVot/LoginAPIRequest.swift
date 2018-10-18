@@ -19,6 +19,7 @@ class LoginAPIRequest {
             if connected {
                 let url = APIURLs.login.url
                 let headers = ["Content-Type": "application/json"]
+                
                 Alamofire.request(url, method: .post, parameters: informations, encoding: JSONEncoding.default, headers: headers).responseString(completionHandler: { (response) in
                     if let statusCode = response.response?.statusCode, statusCode == 200 {
                         let response = response.result.value
@@ -35,18 +36,18 @@ class LoginAPIRequest {
                         }
                     } else {
                         completion(false, nil)
-                        let cancel = UIAlertAction(title: "Închide", style: .cancel, handler: nil)
+                        let cancel = UIAlertAction(title: "Zamknij", style: .cancel, handler: nil)
                         
-                        let alertController = UIAlertController(title: "Autentificarea a eșuat", message: "Datele introduse pentru autentificare nu sunt valide.", preferredStyle: .alert)
+                        let alertController = UIAlertController(title: "Błąd logowania", message: "Podano nieprawidłowy numer telefonu lub PIN.", preferredStyle: .alert)
                         alertController.addAction(cancel)
                        self.parentView?.present(alertController, animated: true, completion: nil)
                     }
                 })
             } else {
                 completion(false, nil)
-                let cancel = UIAlertAction(title: "Închide", style: .cancel, handler: nil)
+                let cancel = UIAlertAction(title: "Zamknij", style: .cancel, handler: nil)
                 
-                let alertController = UIAlertController(title: "Eroare de conexiune", message: "Conectează-te la internet pentru a putea efectua autentificarea", preferredStyle: .alert)
+                let alertController = UIAlertController(title: "Błąd logowania", message: "Brak połączenia z Internetem", preferredStyle: .alert)
                 alertController.addAction(cancel)
                 self.parentView?.present(alertController, animated: true, completion: nil)
             }

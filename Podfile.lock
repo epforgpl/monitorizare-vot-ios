@@ -1,15 +1,24 @@
 PODS:
   - Alamofire (4.1.0)
+  - ReachabilitySwift (4.3.0)
   - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - ReachabilitySwift
   - SwiftKeychainWrapper
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ReachabilitySwift
+    - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Alamofire: e266cf991b933498df791e645e0d8ac294492153
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: a2d502eb825b0bdbdca99e5ebfc27758148a0767
+PODFILE CHECKSUM: 451e762ee95da5d0542666cd58a4876ddb60c316
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.3

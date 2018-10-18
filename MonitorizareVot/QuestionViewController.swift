@@ -44,9 +44,9 @@ class QuestionViewController: RootViewController, UITableViewDataSource, UITable
         NotificationCenter.default.addObserver(self, selector: #selector(QuestionViewController.keyboardDidHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         if let question = self.question, let firstCell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? QuestionBodyTableViewCell {
             if question.note == nil  {
-                firstCell.button.setTitle("Adaugă o notă întrebării", for: .normal)
+                firstCell.button.setTitle("Dodaj notatkę do pytania", for: .normal)
             } else {
-                firstCell.button.setTitle("Editează nota", for: .normal)
+                firstCell.button.setTitle("Edytuj notatkę", for: .normal)
             }
         }
     }
@@ -113,9 +113,9 @@ class QuestionViewController: RootViewController, UITableViewDataSource, UITable
             cell.label.text = question!.text
             cell.delegate = self
             if let question = question, question.note == nil  {
-                cell.button.setTitle("Adaugă o notă întrebării", for: .normal)
+                cell.button.setTitle("Dodaj notatkę do pytania", for: .normal)
             } else {
-                cell.button.setTitle("Editează nota", for: .normal)
+                cell.button.setTitle("Edytuj notatkę", for: .normal)
             }
             return cell
         }

@@ -13,16 +13,16 @@ class SectionInformationsViewController: RootViewController, UIPickerViewDelegat
     private var sectionSaver = SectionSaver()
     @IBOutlet private var formsButtons: [UIButton]!
     @IBOutlet private weak var topLabel: UILabel!
-    @IBOutlet private weak var topButton: UIButton!
+    @IBOutlet weak var topLabelNumber: UILabel!
     @IBOutlet private weak var firstButton: UIButton!
     @IBOutlet private weak var secondButton: UIButton!
     @IBOutlet private weak var thirdButton: UIButton!
     @IBOutlet private weak var fourthButton: UIButton!
     @IBOutlet private weak var fifthButton: UIButton!
-    @IBOutlet private weak var sixthButton: UIButton!
     @IBOutlet private weak var pickerContainer: UIView!
     @IBOutlet private weak var pickerView: UIPickerView!
     @IBOutlet weak var loadingDataView: UIView!
+    @IBOutlet weak var Header: UIView!
     
     private let dbSyncer = DBSyncer()
     private var persistedSectionInfo: SectionInfo?
@@ -31,22 +31,20 @@ class SectionInformationsViewController: RootViewController, UIPickerViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
-        setupOutlets()
         sectionInfo?.resetSectionInformations()
         pickerContainer.isHidden = true
-        fifthButton.setTitle("Alege...", with: MVColors.lightGray.color, for: .normal)
-        sixthButton.setTitle("Alege...", with: MVColors.lightGray.color, for: .normal)
+        fifthButton.setTitle("Wybierz...", with: MVColors.lightGray.color, for: .normal)
         
-        if let topLabelText = self.topLabelText {
-            self.navigationItem.set(title: topLabelText, subtitle: "Informații despre secție")
-        }
+        self.navigationItem.title = "Informacje"
+        self.topLabel.text = self.sectionInfo?.judet
+        self.topLabelNumber.text = self.sectionInfo?.sectie
         
         persistedSectionInfo = dbSyncer.sectionInfo(for: sectionInfo!.judet!, sectie: sectionInfo!.sectie!)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        resetHourButtons()
+        // resetHourButtons()
         checkLocalStorage()
     }
     
@@ -92,16 +90,11 @@ class SectionInformationsViewController: RootViewController, UIPickerViewDelegat
         pickerContainer.isHidden = false
     }
     
-    @IBAction func sixthButtonTapped(_ sender: UIButton) {
-        pickerViewSelection = .plecare
-        pickerContainer.isHidden = false
-    }
-    
     @IBAction func bottomButtonTapped(_ sender: UIButton) {
         if let pickFormViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PickFormViewController") as? PickFormViewController, let sectionInfo = self.sectionInfo {
             pickFormViewController.sectionInfo = sectionInfo
             pickFormViewController.persistedSectionInfo = persistedSectionInfo
-            pickFormViewController.topLabelText = sectionInfo.judet! + " " + String(sectionInfo.sectie!)
+            
             loadingDataView.isHidden = false
             sectionSaver.persistedSectionInfo = persistedSectionInfo
             sectionSaver.save(sectionInfo: sectionInfo, completion: {[weak self] (success, tokenExpired) in
@@ -123,7 +116,6 @@ class SectionInformationsViewController: RootViewController, UIPickerViewDelegat
     
     // MARK: - Utils
     private func resetHourButtons() {
-        sixthButton.setTitle("00:00", for:.normal)
         fifthButton.setTitle("00:00", for:.normal)
     }
     
@@ -153,20 +145,6 @@ class SectionInformationsViewController: RootViewController, UIPickerViewDelegat
             sectionInfo?.arriveMinute = arriveMinuteString
         }
         fifthButton.setTitle(firstButtonTitle, with: MVColors.black.color, for: .normal)
-        
-        var secondButtonTitle = "00:00"
-        if let leftHourString = persistedSectionInfo?.leftHour, let leftMinuteString = persistedSectionInfo?.leftMinute {
-            secondButtonTitle = leftHourString + ":" + leftMinuteString
-            sectionInfo?.leftHour = leftHourString
-            sectionInfo?.leftMinute = leftMinuteString
-        } else if let leftHourString = persistedSectionInfo?.leftHour {
-            secondButtonTitle = leftHourString + ":00"
-            sectionInfo?.leftHour = leftHourString
-        } else if let leftMinuteString = persistedSectionInfo?.leftMinute {
-            secondButtonTitle =  "00:" + leftMinuteString
-            sectionInfo?.leftMinute = leftMinuteString
-        }
-        sixthButton.setTitle(secondButtonTitle, with: MVColors.black.color, for: .normal)
     }
     
     private func adjustButton(button: UIButton, selected: Bool) {
@@ -181,13 +159,6 @@ class SectionInformationsViewController: RootViewController, UIPickerViewDelegat
         for aButton in formsButtons {
             aButton.layer.defaultCornerRadius(borderColor: MVColors.lightGray.cgColor)
         }
-        topButton.layer.defaultCornerRadius(borderColor: MVColors.gray.cgColor)
-    }
-    
-    private func setupOutlets() {
-        if let topLabelText = self.topLabelText {
-            topLabel.text = topLabelText
-        }
     }
     
     private func setupButtonsWithPickerValues() {
@@ -195,10 +166,6 @@ class SectionInformationsViewController: RootViewController, UIPickerViewDelegat
             let arriveHour = sectionInfo.arriveHour
             let arriveMinute =  sectionInfo.arriveMinute
             fifthButton.setTitle(arriveHour + ":" + arriveMinute, with: MVColors.black.color, for: .normal)
-            
-            let leftHour = sectionInfo.leftHour
-            let leftMinute = sectionInfo.leftMinute
-            sixthButton.setTitle(leftHour + ":" + leftMinute, with: MVColors.black.color, for: .normal)
         }
     }
     
