@@ -530,35 +530,35 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhS-kB-1hf">
-                                <rect key="frame" x="0.0" y="20" width="375" height="59"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="58"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sectieIcon" translatesAutoresizingMaskIntoConstraints="NO" id="H4D-ep-iVb">
-                                        <rect key="frame" x="20" y="11" width="35.5" height="34"/>
+                                        <rect key="frame" x="20" y="11" width="35.5" height="33"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="321802" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h4-R9-pVf">
-                                        <rect key="frame" x="71.5" y="26.5" width="75.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <rect key="frame" x="71.5" y="26.5" width="75.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TERYT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWI-kX-88q">
-                                        <rect key="frame" x="71.5" y="12" width="35.5" height="13.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TERYT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWI-kX-88q">
+                                        <rect key="frame" x="72" y="12" width="75" height="14"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numer lokalu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U1-Yh-ijm">
-                                        <rect key="frame" x="153" y="12" width="69" height="13.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Numer lokalu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U1-Yh-ijm">
+                                        <rect key="frame" x="153" y="12" width="86" height="14"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YG0-Ej-CkP">
-                                        <rect key="frame" x="153" y="26.5" width="76" height="20.5"/>
+                                        <rect key="frame" x="153" y="26.5" width="76" height="19.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="76" id="eWE-rK-odu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -582,7 +582,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8T-Ev-d27">
-                                <rect key="frame" x="0.0" y="79" width="375" height="528"/>
+                                <rect key="frame" x="0.0" y="78" width="375" height="529"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rDt-kb-p9m">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
@@ -887,29 +887,36 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                 <rect key="frame" x="0.0" y="20" width="375" height="66"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sectieIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zpN-Ng-81D">
-                                        <rect key="frame" x="20" y="11" width="37.5" height="32"/>
+                                        <rect key="frame" x="20" y="11" width="38" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="38" id="X1n-no-1Z4"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="321802" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBH-QO-ZVU">
-                                        <rect key="frame" x="73.5" y="26.5" width="75.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <rect key="frame" x="74" y="27" width="75" height="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TERYT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGu-K0-KBD">
-                                        <rect key="frame" x="73.5" y="12" width="35.5" height="13.5"/>
+                                        <rect key="frame" x="74" y="12" width="76" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="IIp-1H-tEl"/>
+                                            <constraint firstAttribute="width" constant="76" id="y6T-uI-Z6h"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numer lokalu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIC-ic-kl8">
-                                        <rect key="frame" x="153" y="12" width="69" height="13.5"/>
+                                        <rect key="frame" x="153" y="12" width="82" height="14"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yT-cL-Yaf">
-                                        <rect key="frame" x="153" y="26.5" width="76" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <rect key="frame" x="153" y="27" width="76" height="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -926,16 +933,17 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="zpN-Ng-81D" firstAttribute="leading" secondItem="Bhp-h7-Ret" secondAttribute="leading" constant="20" id="28o-V0-CRD"/>
+                                    <constraint firstItem="tBH-QO-ZVU" firstAttribute="centerY" secondItem="8yT-cL-Yaf" secondAttribute="centerY" id="2e0-wR-cKr"/>
                                     <constraint firstItem="8yT-cL-Yaf" firstAttribute="leading" secondItem="tBH-QO-ZVU" secondAttribute="trailing" constant="4" id="3LF-tw-JOu"/>
                                     <constraint firstItem="iGu-K0-KBD" firstAttribute="baseline" secondItem="nIC-ic-kl8" secondAttribute="baseline" id="5lL-ya-xnf"/>
-                                    <constraint firstItem="k5n-9k-ug8" firstAttribute="leading" secondItem="nIC-ic-kl8" secondAttribute="trailing" constant="21" id="BoT-gN-cf3"/>
+                                    <constraint firstItem="k5n-9k-ug8" firstAttribute="leading" secondItem="nIC-ic-kl8" secondAttribute="trailing" constant="8" id="BoT-gN-cf3"/>
                                     <constraint firstItem="k5n-9k-ug8" firstAttribute="top" secondItem="Bhp-h7-Ret" secondAttribute="top" constant="21" id="Lm1-Ec-uc2"/>
-                                    <constraint firstItem="nIC-ic-kl8" firstAttribute="centerX" secondItem="Bhp-h7-Ret" secondAttribute="centerX" id="Nkc-Z3-Ihl"/>
+                                    <constraint firstItem="nIC-ic-kl8" firstAttribute="centerX" secondItem="Bhp-h7-Ret" secondAttribute="centerX" constant="6.5" id="Nkc-Z3-Ihl"/>
                                     <constraint firstAttribute="trailing" secondItem="k5n-9k-ug8" secondAttribute="trailing" constant="21" id="V45-yA-GlO"/>
                                     <constraint firstItem="nIC-ic-kl8" firstAttribute="leading" secondItem="8yT-cL-Yaf" secondAttribute="leading" id="YB2-vY-CLB"/>
                                     <constraint firstItem="tBH-QO-ZVU" firstAttribute="top" secondItem="iGu-K0-KBD" secondAttribute="bottom" constant="1" id="Ytq-4P-w7O"/>
                                     <constraint firstAttribute="bottom" secondItem="zpN-Ng-81D" secondAttribute="bottom" constant="23" id="Znv-iv-W3S"/>
-                                    <constraint firstItem="nIC-ic-kl8" firstAttribute="leading" secondItem="iGu-K0-KBD" secondAttribute="trailing" constant="44" id="aN3-mu-ipg"/>
+                                    <constraint firstItem="nIC-ic-kl8" firstAttribute="leading" secondItem="iGu-K0-KBD" secondAttribute="trailing" constant="3" id="aN3-mu-ipg"/>
                                     <constraint firstItem="iGu-K0-KBD" firstAttribute="leading" secondItem="zpN-Ng-81D" secondAttribute="trailing" constant="16" id="bmp-7r-myn"/>
                                     <constraint firstItem="zpN-Ng-81D" firstAttribute="top" secondItem="Bhp-h7-Ret" secondAttribute="top" constant="11" id="joq-Na-EAN"/>
                                     <constraint firstItem="iGu-K0-KBD" firstAttribute="leading" secondItem="tBH-QO-ZVU" secondAttribute="leading" id="kb6-24-HWB"/>
@@ -1322,7 +1330,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="7N4-kl-VvS" secondAttribute="bottom" constant="25" id="4bd-fK-Wis"/>
+                                    <constraint firstAttribute="bottom" secondItem="7N4-kl-VvS" secondAttribute="bottom" constant="26" id="4bd-fK-Wis"/>
                                     <constraint firstItem="7N4-kl-VvS" firstAttribute="centerX" secondItem="KRH-lG-TL7" secondAttribute="centerX" id="Dur-Ep-Kn3"/>
                                     <constraint firstAttribute="trailing" secondItem="7N4-kl-VvS" secondAttribute="trailing" id="M3T-tI-Qf8"/>
                                     <constraint firstItem="7N4-kl-VvS" firstAttribute="top" secondItem="KRH-lG-TL7" secondAttribute="top" id="bEA-kv-GZ2"/>
